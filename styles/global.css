@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Goldman", sans-serif;
+}
+
+:root {
+  --secondaryBackgroundClr: #0a173e;
+  --primaryBackgroundClr:#060677;
+  --white:#fff;
+}
+
+/**********SCROLLBAR**********/
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--selectText);
+  border-radius: 10px;
+  padding: 1px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+/**********SCROLLBAR ENDS**********/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/************* NAVBAR **********************/
+
+header {
+  display: flex;  
+  position: fixed;
+  justify-content: space-between; 
+  
+  height: 60px;
+  width: 100%;
+  z-index: 101;
+  background-color: var(--primaryBackgroundClr);
+
+}
+
+/* .nav-cont {  for hamburger responsiveness
+
+} */
+
+.nav-cont img {
+  width: 200px;
+  /* position: fixed; */
+  top: 0;
+  left: 5.2%;
+  /* background-color: var(--primaryBackgroundClr); */
+  z-index: 100;
+  border-radius: 0 0 10px 10px;
+  /* backdrop-filter: blur(10px) saturate(200%); */
+  padding: 0.5rem 2rem;
+}
+
+nav {
+  /* position: fixed; */
+  top: 0;
+  right: 2%;
+  margin-right: 2rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1rem;
+  /* background-color: var(--primaryBackgroundClr); */
+  z-index: 100;
+  transition: 0.25s ease-in-out;
+  /* padding: 1.5rem 2rem; */
+  border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  padding: 1rem 2rem;
+  padding-right: 0;
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li a {
+  /* color: #dc7515; */
+  /* color: #ffa7c8; */
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.25 ease-in-out;
+  z-index: 150;
+}
+
+nav li a:hover {
+  /* color: #914702; */
+  color: #ffffffd2;
+}
+
+/************* NAVBAR CLOSED **********************/
