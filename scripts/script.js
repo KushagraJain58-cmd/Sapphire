@@ -87,3 +87,17 @@ $('.slideshow-text').slick({
 	speed: 900,
 	cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
 });
+
+// JavaScript code
+const mainElement = document.getElementById('main-element');
+const slickDotsElement = document.querySelector('.slideshow .slick-dots');
+
+window.addEventListener('scroll', function() {
+	const rect = mainElement.getBoundingClientRect();
+
+	if (rect.bottom < 0 || rect.top > window.innerHeight) {
+		slickDotsElement.classList.add('hide');
+	} else {
+		slickDotsElement.classList.remove('hide');
+	}
+});

@@ -34,15 +34,16 @@ main {
   display: none;
 }
 .slideshow .slider .item img {
-  min-width: 101%;
-  min-height: 101%;
+  width: 100%;
+  height: 100%;
   position: absolute;
+  object-fit: cover !important;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .slideshow .slick-dots {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   width: 40px;
   height: auto;
@@ -54,6 +55,13 @@ main {
   color: #fff;
   display: block;
 }
+
+/* Your CSS code */
+.slideshow .slick-dots.hide {
+  display: none;
+}
+
+
 .slideshow .slick-dots li {
   display: block;
   width: 100%;
@@ -106,7 +114,7 @@ main {
   position: absolute;
   top: 60%;
   left: 30%;
-  height: 100px;
+  height: 5rem;
   transform: translate(-50%, -50%);
   z-index: 100;
   font-size: 40px;
@@ -117,27 +125,41 @@ main {
   pointer-events: none;
   line-height: 0.9;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 1210px) {
+  .slideshow-text{
+    left: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  main{
+    height: 70vh;
+  }
+  .slideshow {
+    height: 65vh;
+  }
   .slideshow-text {
-    font-size: 40px;
+    font-size: 35px;
+    width: 30rem;
+    top: 50%;
+  }
+  .slideshow .slick-dots {
+    top: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slideshow-text {
+    font-size: 30px;
+    left: 50%;
+    /* width: 30rem; */
+
   }
 }
 
 .slideshow-text .item {
   height: 6.7rem !important;
-}
-
-.the-most {
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 50vw;
-  max-width: 200px;
-  padding: 10px;
-}
-.the-most img {
-  max-width: 100%;
 }
 
 .slick-slider
