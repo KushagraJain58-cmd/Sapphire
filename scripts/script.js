@@ -74,6 +74,11 @@ $('.slideshow-right .slider').slick({
 	cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
 	initialSlide: maxItems - 1
 });
+
+setInterval(function() {
+	$('.slideshow-left').slick('slickNext');
+}, 5000);
+
 $('.slideshow-text').slick({
 	swipe: false,
 	vertical: true,
