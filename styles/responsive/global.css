@@ -1,0 +1,130 @@
+@media (max-width: 860px) {
+    nav {
+        font-size: 0.8rem;
+    }
+    nav ul{
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+    nav {
+        font-size: 0.8rem;
+    }
+    nav ul{
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  header {
+    top: 0;
+    /* left: 2%; */
+    align-items: self-start;
+    /* background-color: #00000090; */
+    /* border-radius: 0 0 10px 10px; */
+    /* backdrop-filter: blur(10px) saturate(200%); */
+    /* padding: 0.4rem 1.2rem; */
+    flex-flow: column;
+  }
+
+  .nav-cont {
+    width: 100%;
+    display: flex;
+  }
+
+  header nav {
+    display: none;
+    height: 0px;
+    overflow: hidden;
+    pointer-events: none;
+    /* position: static; */
+    display: flex;
+    /* flex-flow: column; */
+    gap: 2rem;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  header nav.shown {
+    margin: 1rem 1rem;
+    pointer-events: all;
+  }
+
+  nav ul {
+    flex-flow: column;
+    /* justify-content: start; */
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  nav ul li {
+    justify-content: flex-start;
+  }
+
+  nav .drop {
+    position: absolute;
+    height: 0;
+    padding-top: 0;
+    top: 100%;
+  }
+
+  nav .drop ul {
+    /* backdrop-filter: unset; */
+    /* background-color: transparent; */
+    padding: 0;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+  }
+
+
+  /* nav .events a:focus + .drop,
+  .drop:focus {
+    height: fit-content;
+  } */
+
+  .nav-cont img {
+    /* position: static; */
+    background-color: transparent;
+    transform: translateX(-10%);
+    margin: 0 auto;
+  }
+
+  header .nav-icon {
+    width: 50px;
+    /* background-color: white; */
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
+
+  header .nav-icon::before {
+    content: "";
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    transition: 0.25s ease-in-out;
+  }
+
+  header .nav-icon::after {
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: white;
+    transition: 0.25s ease-in-out;
+  }
+
+  header .nav-icon.close::before {
+    transform: rotate(45deg) translate(15%, 0);
+    width: 40px;
+  }
+
+  header .nav-icon.close::after {
+    transform: rotate(-45deg) translate(15%, 0);
+    width: 40px;
+  }
+}

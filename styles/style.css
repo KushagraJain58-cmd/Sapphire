@@ -28,7 +28,7 @@ main {
   position: relative;
   overflow: hidden;
   border: none;
-  margin-top: 59px;;
+  margin-top: 50px;
 }
 .slideshow .slider .item .text {
   display: none;
@@ -157,6 +157,23 @@ main {
 
   }
 }
+
+@media (max-width: 480px) {
+  .slideshow-text{
+    left: 50%;
+    font-size: 23px;
+     width: 20rem;
+  }
+}
+
+@media (max-width: 315px) {
+  .slideshow-text{
+    left: 50%;
+    font-size: 20px;
+     width: 18rem;
+  }
+}
+
 
 .slideshow-text .item {
   height: 6.7rem !important;
