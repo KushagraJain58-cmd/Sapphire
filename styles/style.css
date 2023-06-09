@@ -1,3 +1,12 @@
+:root {
+  --secondaryBackgroundClr: #0a173e;
+  --primaryBackgroundClr:#060677;
+  --primaryText:#050545;
+  --secondaryText:#3e3edc;
+  --white:#fff;
+}
+
+/**************** SLIDESHOW ******************/
 main {
   display: flex;
   flex-direction: column;
@@ -182,4 +191,126 @@ main {
 .slick-slider
 {
   position: absolute !important;
+}
+
+/**************** SLIDESHOW CLOSED******************/
+
+section {
+  margin-bottom: 5rem !important;
+}
+
+.section-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.6rem;
+  width: 65%;
+  text-align: center;
+}
+
+.tagline h1{
+  color: var(--primaryText);
+}
+.tagline p{
+  color: var(--secondaryText);
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/**************** PRODUCTS ***********************/
+
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+#products h1{
+  font-size: 30px;
+  background-color:#060677;
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.wrapper {
+    /* position: relative; */
+    /* max-width: 1200px; */
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper .icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 46px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(to bottom, #060677, #b9addb);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5),
+                inset 0px 4px 4px rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.wrapper i:active {
+  transform: scale(1.03);
+}
+
+.arrows {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    transform: translateY(50%);
+    /* bottom: -20%; */
+    /* margin-bottom: 1.5rem; */
+}
+.arrows .left {
+  left: 10px;
+}
+
+.wrapper .carousel {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 340px;
+    width: calc(100% / 4);
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.carousel img:first-child {
+    margin-left: 0;
 }

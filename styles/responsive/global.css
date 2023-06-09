@@ -19,12 +19,7 @@
 @media only screen and (max-width: 620px) {
   header {
     top: 0;
-    /* left: 2%; */
     align-items: self-start;
-    /* background-color: #00000090; */
-    /* border-radius: 0 0 10px 10px; */
-    /* backdrop-filter: blur(10px) saturate(200%); */
-    /* padding: 0.4rem 1.2rem; */
     flex-flow: column;
   }
 
@@ -38,9 +33,7 @@
     height: 0px;
     overflow: hidden;
     pointer-events: none;
-    /* position: static; */
     display: flex;
-    /* flex-flow: column; */
     gap: 2rem;
     margin: 0;
     font-size: 1.2rem;
@@ -53,7 +46,6 @@
 
   nav ul {
     flex-flow: column;
-    /* justify-content: start; */
     padding: 0;
     gap: 1.5rem;
   }
@@ -70,21 +62,12 @@
   }
 
   nav .drop ul {
-    /* backdrop-filter: unset; */
-    /* background-color: transparent; */
     padding: 0;
     padding-top: 1rem;
     padding-left: 0.5rem;
   }
 
-
-  /* nav .events a:focus + .drop,
-  .drop:focus {
-    height: fit-content;
-  } */
-
   .nav-cont img {
-    /* position: static; */
     background-color: transparent;
     transform: translateX(-10%);
     margin: 0 auto;
@@ -92,7 +75,6 @@
 
   header .nav-icon {
     width: 50px;
-    /* background-color: white; */
     position: relative;
     display: flex;
     flex-flow: column;
