@@ -196,6 +196,14 @@ main {
 /**************** SLIDESHOW CLOSED******************/
 
 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+section {
   margin-bottom: 5rem !important;
 }
 
@@ -206,6 +214,7 @@ section {
   align-items: center;
 }
 
+/************* TAGLINE *****************************/
 .tagline {
   display: flex;
   flex-direction: column;
@@ -227,20 +236,12 @@ section {
 
 /**************** PRODUCTS ***********************/
 
-#products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 3rem;
-}
-
-#products h1{
-  font-size: 30px;
+.section-head {
   background-color:#060677;
   color: var(--white);
   padding: 1rem;
   border-radius: 20px;
+font-size: 30px;
 }
 
 .wrapper {
@@ -314,3 +315,38 @@ section {
 .carousel img:first-child {
     margin-left: 0;
 }
+
+/***************** PRODUCTS CLOSED *********************/
+
+/***************** OUR SERVICES*********************/
+
+.services-cont
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  max-width: 20%;
+}
+
+.service-card h1 {
+  color: var(--primaryText);
+}
+
+.service-card p {
+  color: var(--secondaryText);
+  text-align: center;
+}
+
+/***************** OUR SERVICES CLOSED*********************/
