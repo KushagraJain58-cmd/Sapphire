@@ -121,6 +121,7 @@ navIcon.addEventListener('click', () => {
 });
 
 /*********** PRODUCTS SLIDESHOW ******************/
+
 const carousel = document.querySelector('.carousel'),
 	firstImg = document.querySelectorAll('img')[0];
 const arrowIcons = document.querySelectorAll('.wrapper .icon');

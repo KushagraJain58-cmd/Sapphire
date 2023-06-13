@@ -246,7 +246,7 @@ section {
 .wrapper {
     /* position: relative; */
     /* max-width: 1200px; */
-    max-width: 90%;
+    max-width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
